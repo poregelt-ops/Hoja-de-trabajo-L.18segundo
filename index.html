@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoja de Trabajo - Historia | Colegio Escolaris</title>
+    <style>
+        /* Protección contra copiado */
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            padding: 40px 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-top: 8px solid #0056b3; /* Color corporativo */
+        }
+
+        /* Campos editables permitidos */
+        input, textarea, select {
+            -webkit-user-select: text;
+            user-select: text;
+            border: 1px solid #bdc3c7;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .activity { margin-bottom: 30px; padding: 20px; background: #fafafa; border-radius: 8px; }
+        .brand { font-size: 0.9em; color: #7f8c8d; text-align: right; margin-bottom: 20px; }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+
+<div class="container">
+    <div class="brand">Colegio Escolaris — Ciclo Escolar 2026</div>
+    <h1>📜 HOJA DE TRABAJO — HISTORIA</h1>
+    <p><strong>El Descubrimiento y la Conquista de América</strong></p>
+    <p>🎓 Segundo Grado de Educación Básica</p>
+    <p>Nombre: <input type="text" style="width: 300px;" placeholder="Escribe tu nombre"> Fecha: <input type="date"></p>
+    
+    <hr>
+
+    <div class="activity">
+        <h3>🌟 NIVEL 1 — RECUERDO Y COMPRENSIÓN</h3>
+        <p><strong>Actividad 3: Selección múltiple</strong></p>
+        <p>a) ¿En qué año llegó Cristóbal Colón a América?</p>
+        <label><input type="radio" name="p1"> 1492</label> &nbsp; 
+        <label><input type="radio" name="p1"> 1942</label> &nbsp; 
+        <label><input type="radio" name="p1"> 1249</label>
+    </div>
+
+    <div class="activity">
+        <h3>🌟🌟 NIVEL 2 — APLICACIÓN Y ANÁLISIS</h3>
+        <p><strong>Actividad 7: Verdadero o Falso</strong></p>
+        <p>a) “Cristóbal Colón era de América.”</p>
+        <select><option>V</option><option>F</option></select>
+        <input type="text" placeholder="Explica por qué..." style="width: 250px;">
+    </div>
+
+    <div class="activity">
+        <h3>🌟🌟🌟 NIVEL 3 — EVALUACIÓN Y CREACIÓN</h3>
+        <p><strong>Actividad 8: Redacción periodística (Año 1492)</strong></p>
+        <textarea style="width: 100%; height: 120px;" placeholder="Escribe tu noticia aquí..."></textarea>
+    </div>
+</div>
+
+<script>
+    // Bloqueo avanzado de comandos de copia
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'a' || e.key === 'x' || e.key === 'u' || e.key === 's')) {
+            e.preventDefault();
+        }
+        if (e.key === 'F12') e.preventDefault();
+    });
+</script>
+</body>
+</html>
